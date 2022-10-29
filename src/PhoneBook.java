@@ -27,9 +27,10 @@ public class PhoneBook {
 
     }
 
-    public void updateRecord(Record record) throws RecordNotFound, RecordNotValid {
+    public void updateRecord(Record record) throws RecordNotValid {
         int newID = 0;
         int i = 0;
+
         for (Record record1 : this.record) {
             if (record.id == record1.id) {
                 if (record.name.equals("") || record.phoneNumber.equals("")){
@@ -47,7 +48,7 @@ public class PhoneBook {
             }
 
     }
-    public void deleteRecord(long id) throws RecordNotFound {
+    public void deleteRecord(long id) {
         int newID = 0;
         for (Record record1 : this.record) {
             if (record1.id == id) {
