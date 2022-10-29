@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
+    // Main class in which the main code is written
     public static void main(String[] args) throws RecordNotFound, RecordNotValid {
         PhoneBook book = new PhoneBook(new ArrayList<Record>());
         System.out.println("------------------CREATE RECORD ---------------------");
