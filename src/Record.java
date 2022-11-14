@@ -1,6 +1,5 @@
-import java.util.List;
-
 public class Record {
+    // a class that adds a contact record
     long id;
     String  phoneNumber;
     String name;
